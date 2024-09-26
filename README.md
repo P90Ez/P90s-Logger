@@ -2,6 +2,12 @@
 
 A simple, modular and lightweight C# logger.
 
+## Installation
+
+Download this package from the NuGet Package Manager, by either using the NuGet Browser built into Visual Studio and searching for `P90Ez.Logger`, or by using the command `dotnet add package P90Ez.Logger`.
+
+You can find this NuGet package [here](https://www.nuget.org/packages/P90Ez.Logger).
+
 ## Usage
 
 This tool contains two ready-to-go implementations, which are thread safe by default. `ConsoleLogger` prints the logs directly to the console. `FileLogger` prints the logs into the specified file when program exits or when the number of logs exceeds the specified buffer limit.
