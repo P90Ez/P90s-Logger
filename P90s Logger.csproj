@@ -5,12 +5,35 @@
     <RootNamespace>P90Ez.Logger</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>P90s Logger</Title>
+    <Authors>P90Ez - Manu</Authors>
+    <Description>A simple, modular and lightweigt C# logger. </Description>
+    <PackageProjectUrl>https://github.com/P90Ez/P90s-Logger</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/P90Ez/P90s-Logger</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Logger</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>P90Ez.Logger</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Tests\**" />
     <EmbeddedResource Remove="Tests\**" />
     <None Remove="Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

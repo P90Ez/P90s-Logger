@@ -92,12 +92,4 @@ namespace P90Ez.Logger
             }
         }
     }
-
-    public class CustomFormatLogger : ConsoleLogger
-    {
-        public override string FormatMessage(string Message, ILogger.Severity Severity)
-        {
-            //implement body for custom formatting
-        }
-    }
 }
