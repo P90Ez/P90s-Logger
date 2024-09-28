@@ -74,6 +74,17 @@ Output:
         Tests.Program.Main:13
 ```
 
+When writing functions where a logger is optional, the `NullLogger` can be used. `NullLogger` voids all log statements.
+
+```c#
+void OptionalLogger(ILogger? Logger = null)
+{
+    Logger ??= NullLogger.Instance; //if (Logger == null) Logger = NullLogger.Instance;
+
+    //do stuff
+}
+```
+
 ## Customization
 
 ### Custom Format
